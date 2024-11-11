@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tulip Garden</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header" id="home">
+        <h1>Welcome to the Tulip Garden</h1>
+        <p>Embrace the beauty of nature with a touch of purple elegance.</p>
+        <button id="discover-btn">Discover More</button>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About Our Garden</h2>
+        <p>
+            Our tulip garden features a wide variety of purple tulips, offering a calming and beautiful experience.
+            Each tulip is unique, creating a vibrant landscape filled with color and life.
+        </p>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <h2>Our Collection</h2>
+        <div class="image-grid">
+            <img src="tulip1.jpg" alt="Purple Tulip 1" class="tulip-img" onclick="openModal(this.src)">
+            <img src="tulip2.jpg" alt="Purple Tulip 2" class="tulip-img" onclick="openModal(this.src)">
+            <img src="tulip3.jpg" alt="Purple Tulip 3" class="tulip-img" onclick="openModal(this.src)">
+        </div>
+    </section>
+
+    <!-- Modal for Enlarged Image -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
